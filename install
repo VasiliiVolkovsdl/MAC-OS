@@ -1,0 +1,7 @@
+DFXPSWD="*PASSWORD*" /usr/local/bin/deepfreeze thaw --computer --env
+sudo installer -pkg /Volumes/Blackmagic\ DaVinci\ Resolve/Install\ Resolve\ 18.1.4.pkg -target /
+sleep 60
+diskutil unmountDisk /dev/disk2
+rm /Applications/DaVinci_Resolve_18.1.4_Mac.dmg
+sleep 10
+DFXPSWD="*PASSWORD*" /usr/local/bin/deepfreeze freeze --computer --env
